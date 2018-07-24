@@ -8,7 +8,7 @@ lists directory/folder contents
 ## cd
 changes directory
 
-## cd.. 
+## cd..
 changes to parent directory
 
 ## mkdir
@@ -21,4 +21,12 @@ remove directory
 
 ## create a virtual environment
 python3 -m venv env  
-source env/bin/activate
+source env/bin/activate  
+pip install flask  
+
+## running flask
+cd ( to directory )  
+source env/bin/activate  
+export FLASK_APP=run.py   
+export FLASK_DEBUG=1  
+flask run
