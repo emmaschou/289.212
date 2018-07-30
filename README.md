@@ -30,3 +30,26 @@ source env/bin/activate
 export FLASK_APP=run.py   
 export FLASK_DEBUG=1  
 flask run
+
+
+# sql tings
+
+## easier to view with tables
+.headers on   
+.mode column  
+.width 5 30 10  
+
+## create table
+
+sqlite> DROP TABLE burgers;  
+sqlite> .tables  
+sqlite> CREATE TABLE burgers(  
+   ...> id INTEGER PRIMARY KEY,  
+   ...> burger TEXT UNIQUE NOT NULL,  
+   ...> price FLOAT NOT NULL  
+   ...> );  
+sqlite> SELECT * FROM burgers;  
+
+## view table i guess in terminal
+
+SELECT * FROM tablename;
