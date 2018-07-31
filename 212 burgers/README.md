@@ -52,4 +52,5 @@ sqlite> SELECT * FROM burgers;
 
 ## view table i guess in terminal
 
-SELECT * FROM tablename;
+SELECT * FROM "tablename";  
+.tables
