@@ -54,3 +54,13 @@ sqlite> SELECT * FROM burgers;
 
 SELECT * FROM "tablename";  
 .tables
+
+## super()
+content and added on content not replaced
+
+## name="name"
+name is equal to whatever was picked?
+must be unique
+name="{{ burger[0] }}"
+
+burger name in list is 0 not price which is 1
