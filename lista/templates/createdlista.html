@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>lista</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="icon" href="img/listafavi.png"/>
+  </head>
+  <body>
+    <a href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='img/listalogo.png') }}" alt="logo" id="logo">
+    </a>
+    <img src="{{ url_for('static', filename='img/listabg.png') }}" alt="background image" id="bgblob">
+
+    <div>
+      <h3> Today's lista: </h3>
+      <h4> Based on your answers </h4>
+    </div>
+
+    <!-- <p>
+      {{ query }}
+    </p> -->
+
+    {{ playlist }}
+
+    <table style="width:80%">
+      <tr>
+        <th>Song</th>
+        <th>Artist</th>
+        <th>Album</th>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+
+
+    <div class="recreatebtn">
+      <a href="{{ url_for('index') }}">Create another</a>
+    </div>
+
+
+  </body>
+  </body>
+</html>

@@ -56,7 +56,6 @@ h4{
 }
 
 .row::after{
-  content: "";
   clear: both;
   display: table;
 }
@@ -80,6 +79,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+  text-decoration: none;
 }
 
 .createbtn:hover{
