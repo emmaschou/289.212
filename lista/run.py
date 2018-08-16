@@ -38,4 +38,5 @@ def createdlista():
     playlist.append(list(row))
   con.close()
 
+
   return render_template('createdlista.html', playlist=playlist, query=query)

@@ -5,8 +5,9 @@
     <meta charset="utf-8"/>
     <title>lista</title>
     <meta name="description" content="" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-    <link rel="icon" href="img/listafavi.png"/>
+    <link rel="icon" href="{{ url_for('static', filename='img/listafavi.png') }}"/>
   </head>
   <body>
     <a href="{{ url_for('index') }}">
@@ -14,36 +15,33 @@
     </a>
     <img src="{{ url_for('static', filename='img/listabg.png') }}" alt="background image" id="bgblob">
 
-    <div>
-      <h3> Today's lista: </h3>
-      <h4> Based on your answers </h4>
+    <h3> Today's lista: </h3>
+    <br><br>
+    <h4> Based on your answers </h4>
+    <div class="container">
+
+      <!-- <p>
+        {{ query }}
+      </p> -->
+
+      <table style="width:100%">
+        <tr>
+          <th>Song</th>
+          <th>Artist</th>
+          <th>Album</th>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+        {{ playlist }}
+
+
+      <div class="recreatebtn">
+        <a href="{{ url_for('index') }}">Create another</a>
+      </div>
     </div>
-
-    <!-- <p>
-      {{ query }}
-    </p> -->
-
-    {{ playlist }}
-
-    <table style="width:80%">
-      <tr>
-        <th>Song</th>
-        <th>Artist</th>
-        <th>Album</th>
-      </tr>
-      <tr>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-      </tr>
-    </table>
-
-
-    <div class="recreatebtn">
-      <a href="{{ url_for('index') }}">Create another</a>
-    </div>
-
 
   </body>
   </body>

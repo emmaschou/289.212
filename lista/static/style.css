@@ -1,11 +1,13 @@
 body{
-  background: linear-gradient(-90deg, #8a5af9, #eb139b);
+  /* background: linear-gradient(-90deg, #8a5af9, #eb139b); */
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 #logo{
   width: 120px;
+  position: fixed;
 }
 
 #bgblob{
@@ -14,17 +16,16 @@ body{
   max-width: 100%;
 }
 
-h1{
-  margin-left: 200px;
-  margin-top: 150px;
+/* h1{
+  text-align: center;
   font-size: 100px;
 }
 
 h2{
-  margin-left: 200px;
+  text-align: center;
   font-size: 60px;
   font-weight: lighter;
-}
+} */
 
 .arrow{
   display: block;
@@ -34,25 +35,23 @@ h2{
   margin-right: auto;
 }
 
+
 h3{
-  margin-top: 150px;
-  text-align: center;
+  margin-top: 350px;
   font-size: 60px;
   font-weight: 500;
 }
 
 h4{
-  margin-top: -50px;
-  text-align: center;
   font-size: 30px;
   font-weight: lighter;
 }
 
+
 .column{
   float: left;
-  width: 32%;
+  width: 20%;
   padding: 5px;
-  text-align: center;
 }
 
 .row::after{
@@ -61,24 +60,14 @@ h4{
 }
 
 
-a{
-  color: White;
-  padding: 40px;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
 .createbtn{
   background: linear-gradient(-180deg, #f46095, #ee3090);
   width: 400px;
   height: 85px;
   margin-top: 100px;
   border-radius: 35px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 100px;
+  color: white;
   text-decoration: none;
 }
 
@@ -89,14 +78,16 @@ a{
 .recreatebtn{
   background: linear-gradient(-180deg, #f46095, #ee3090);
   width: 500px;
-  height: 85px;
+  height: 80px;
   margin-top: 100px;
   border-radius: 35px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+  text-decoration: none;
 }
 
 .recreatebtn:hover{
   opacity: 0.6;
+  text-decoration: none;
 }
