@@ -5,8 +5,8 @@
     <meta charset="utf-8"/>
     <title>lista</title>
     <meta name="description" content="" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}"/>
     <link rel="icon" href="{{ url_for('static', filename='img/listafavi.png') }}"/>
   </head>
   <body>
@@ -89,10 +89,7 @@
               <input type="radio" name="color5" value="White">
             </div>
           </div>
-
-          <input type="submit" value="create lista" class="createbtn">
-
-
+        <h3><input type="submit" value="Create lista" class="createbtn" style="color:white;"></h3>
       </form>
     </div>
   </body>
