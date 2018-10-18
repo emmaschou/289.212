@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Game Of Thrones Screen Time</title>
+  <meta name="description" content="Screen time for each season of each character" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css"/>
+  <!-- <link rel="icon" href="{{ url_for('static', filename='img/gotfavi.png') }}"/> -->
+</head>
+
+<body>
+
+
+  <div id="vis">
+
+  </div>
+
+
+  <svg width="600" height="600" id="svg" style="outline: 1px red solid;">
+     <g id="circle_center" transform="translate(300 300)"></g>
+  </svg>
+
+  <!-- <script>
+  function getCoordinatesForPercent(percent) {
+    var x = Math.cos(2 * Math.PI * percent);
+    var y = Math.sin(2 * Math.PI * percent);
+    return [x, y];
+  }
+
+  var xy = getCoordinatesForPercent(0); // start angle
+  var percent = 0.4; // end angle
+  var end = getCoordinatesForPercent(percent);
+  var largeArcFlag = percent > .5 ? 1 : 0;
+  var d = `M ${xy[0]} ${xy[1]} A 1 1 0 ${largeArcFlag} 1 ${end[0]} ${end[1]} L 0 0`;
+  var arc = document.createElementNS('http://www.w3.org/2000/svg','path')
+  arc.setAttribute('d', d);
+  arc.setAttribute('fill', 'red');
+  arc.setAttribute('transform', 'scale(200 200) rotate(-90)')
+  document.getElementById('circle_center').appendChild(arc);
+
+  console.log(d);
+
+  </script> -->
+
+  <script src="js.js"></script>
+</body>
+
+
+</html>
