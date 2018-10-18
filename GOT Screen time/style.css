@@ -1,0 +1,21 @@
+/* * { outline: 1px solid red } */
+
+body{
+  background-image: url("img/lakelouise.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
+#vis > div {
+  position: relative;
+}
+
+#vis img {
+  width: 250px;
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
